@@ -82,8 +82,7 @@ def part2():
     for i in inputData:
         theirMove, myExpectedWinResult = i.split(" ")
         myMove = whatDoIChoose(theirMove, myExpectedWinResult)
-        # print(theirMove, myMove)
-        # print(ifIWinRockPaperScissors(theirMove, myMove))
+
         if ifIWinRockPaperScissors(theirMove, myMove):
             totalScore += roundOutcomeScore["W"]
             totalScore += choiceScore[myMove]
